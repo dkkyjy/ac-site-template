@@ -1,12 +1,12 @@
 ---
 title: "OMX - 学习笔记"
-description: "OMX 用法学习笔记 + 文献跟踪下载翻译分析系统实施规划。"
+description: "OMX 用法学习笔记。"
 pubDate: "Aug 10 2026"
 badge: "guide"
 tags: ["omx", "paper", "文献"]
 ---
 
-# OMX 用法学习笔记 + 文献跟踪下载翻译分析系统实施规划
+# OMX 用法学习笔记
 
 > 生成时间: 2026-06-25
 > 环境: oh-my-codex v0.18.14, Codex CLI 0.36.0, 37个skills(30 active)
