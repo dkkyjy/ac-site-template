@@ -1,5 +1,5 @@
 ---
-title: "OMX 学习笔记"
+title: "OMX - 学习笔记"
 description: "OMX 用法学习笔记 + 文献跟踪下载翻译分析系统实施规划。"
 pubDate: "Aug 10 2026"
 badge: "guide"

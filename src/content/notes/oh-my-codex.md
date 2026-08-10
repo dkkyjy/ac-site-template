@@ -1,5 +1,5 @@
 ---
-title: "OMX (oh-my-codex) 使用示例大全"
+title: "OMX (oh-my-codex) - 使用示例"
 description: "OMX (oh-my-codex) 使用示例大全。"
 pubDate: "Aug 10 2026"
 badge: "guide"

@@ -1,5 +1,5 @@
 ---
-title: "Superpowers 完整使用指南"
+title: "Superpowers - 使用指南"
 description: "Superpowers 完整使用指南。"
 pubDate: "Aug 10 2026"
 badge: "guide"

@@ -1,5 +1,5 @@
 ---
-title: "Matt Pocock Skills 完整总结与用法指南"
+title: "Matt Pocock Skills - 完整用法指南"
 description: "Matt Pocock skills 的完整总结与用法指南。"
 pubDate: "Aug 10 2026"
 badge: "guide"

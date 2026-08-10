@@ -1,5 +1,5 @@
 ---
-title: "Grilling SOP — 需求追问引擎"
+title: "Grilling - 需求追问方法论"
 description: "从 mattpocock grill 家族蒸馏的交互式需求澄清与设计压力测试引擎。"
 pubDate: "2026-08-10"
 badge: "guide"

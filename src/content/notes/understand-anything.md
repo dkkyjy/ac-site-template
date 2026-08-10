@@ -1,5 +1,5 @@
 ---
-title: "Understand-Anything 使用示例"
+title: "Understand-Anything - 使用示例"
 description: "Understand-Anything 使用示例。"
 pubDate: "Aug 10 2026"
 badge: "guide"

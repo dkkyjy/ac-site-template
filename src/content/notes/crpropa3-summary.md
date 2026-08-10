@@ -1,5 +1,5 @@
 ---
-title: "CRPropa3 功能总结"
+title: "CRPropa3 - 软件功能总结"
 description: "CRPropa3 功能总结与使用文档。"
 pubDate: "Aug 10 2026"
 badge: "guide"

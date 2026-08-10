@@ -1,5 +1,5 @@
 ---
-title: "Open Code Review 使用示例"
+title: "OpenCodeReview - 使用指南"
 description: "Open Code Review 使用示例汇总。"
 pubDate: "Aug 10 2026"
 badge: "guide"

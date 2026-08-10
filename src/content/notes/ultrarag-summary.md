@@ -1,5 +1,5 @@
 ---
-title: "UltraRAG 功能总结与使用指南"
+title: "UltraRAG - 功能总结"
 description: "UltraRAG 功能总结与使用指南。"
 pubDate: "Aug 10 2026"
 badge: "guide"

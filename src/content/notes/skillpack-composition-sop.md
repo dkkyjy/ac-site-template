@@ -1,5 +1,5 @@
 ---
-title: "skillpack_composition — 四包编排"
+title: "Skillpack - 四包编排"
 description: "grill/openspec/superpowers/compound-engineering 四包有机编排。"
 pubDate: "2026-08-10"
 badge: "guide"

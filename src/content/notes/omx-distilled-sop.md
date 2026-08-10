@@ -1,5 +1,5 @@
 ---
-title: "OMX Distilled — oh-my-codex 蒸馏"
+title: "OMX - 蒸馏笔记"
 description: "oh-my-codex 多 Agent 编排层蒸馏存档：结构、接入方式。"
 pubDate: "2026-08-10"
 badge: "distilled"

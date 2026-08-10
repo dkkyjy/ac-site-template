@@ -1,5 +1,5 @@
 ---
-title: "Oh-My-ClaudeCode 多智能体编排演示"
+title: "Oh-My-ClaudeCode - 多智能体编排演示"
 description: "Oh-My-ClaudeCode (OMC) Multi-Agent Orchestration 演示 slides。"
 pubDate: "Aug 10 2026"
 badge: "guide"

@@ -1,5 +1,5 @@
 ---
-title: "Compound Engineering 使用示例大全"
+title: "Compound Engineering - 使用示例"
 description: "Compound Engineering 使用示例大全。"
 pubDate: "Aug 10 2026"
 badge: "guide"

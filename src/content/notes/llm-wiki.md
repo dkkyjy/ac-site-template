@@ -1,5 +1,5 @@
 ---
-title: "LLM Wiki 用法示例展示"
+title: "LLM Wiki - 用法示例"
 description: "LLM Wiki 用法示例展示。"
 pubDate: "Aug 10 2026"
 badge: "guide"
