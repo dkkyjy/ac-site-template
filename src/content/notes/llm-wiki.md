@@ -6,7 +6,7 @@ badge: "guide"
 tags: ["llm", "wiki"]
 ---
 
-# 📖 LLM Wiki 用法示例展示
+# LLM Wiki 用法示例展示
 
 > 这是 [wei-llm-wiki](https://github.com/zyw-Wayne/wei-llm-wiki) 的演示，基于 Karpathy 的 LLM Wiki 方法论。
 

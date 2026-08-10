@@ -6,7 +6,7 @@ badge: "guide"
 tags: ["superpowers", "skill"]
 ---
 
-# 🚀 Superpowers 完整使用指南
+# Superpowers 完整使用指南
 
 ## 什么是 Superpowers？
 

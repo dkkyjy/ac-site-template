@@ -6,7 +6,7 @@ badge: "guide"
 tags: ["omx", "codex"]
 ---
 
-# 🧙 OMX (oh-my-codex) 使用示例大全
+# OMX (oh-my-codex) 使用示例大全
 
 > **OMX** = OpenAI Codex CLI 的多 Agent 编排层。它不替代 Codex，而是增加：**更好的任务路由 + 更好的工作流 + 更好的运行时**。
 
