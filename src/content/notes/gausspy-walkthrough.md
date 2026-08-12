@@ -9,8 +9,6 @@ tags: ["gausspy", "物理"]
 
 # AGD 中间流程示例:合成谱到分量拟合的完整可复现走查
 
-*2026-08-11T05:32:38Z by Showboat 0.6.1*
-
 本走查用可复现的代码块,重新讲解我们构建的 AGD 中间流程示例:从合成谱出发,经过正则化导数、分量探测、去混合、单相与两相分解,到 AGD_double 吸收+发射混合。每一节都对应 Lindner et al. 2015 论文的一个章节与 gausspy 代码的一个阶段,输出可被 make 一键重生成。
 
 先看公共辅助模块 common.py:它提供两条可复现例程——合成数据 synth_data()(返回速度轴 v、含噪数据 data、无噪声真值 true、真实分量 comps)与正则化导数 reg_ders()(python 模式下 TVdiff 四阶链)。
