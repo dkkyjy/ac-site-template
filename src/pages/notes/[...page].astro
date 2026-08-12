@@ -27,11 +27,26 @@ const groups = CATEGORY_ORDER.map((cat) => ({
     items: page.data.filter((n) => n.data.category === cat),
 }));
 const hasAny = groups.some((g) => g.items.length > 0);
+// 非空分组（用于生成筛选按钮）
+const nonEmpty = groups.filter((g) => g.items.length > 0);
 ---
 
 <BaseLayout title={AUTHOR_INITIAL + " | Notes"} sideBarActiveItemID="notes">
     <div class="mb-5">
         <div class="text-3xl w-full font-bold">Notes</div>
+    </div>
+
+    <div class="mb-6 flex flex-wrap gap-2" id="notes-cat-filters">
+        <button type="button" data-cat="all" class="btn btn-sm btn-primary">
+            全部
+        </button>
+        {
+            nonEmpty.map((g, i) => (
+                <button type="button" data-cat={g.name} class="btn btn-sm btn-outline">
+                    {g.name}
+                </button>
+            ))
+        }
     </div>
 
     {
@@ -43,9 +58,9 @@ const hasAny = groups.some((g) => g.items.length > 0);
                 </p>
             </div>
         ) : (
-            groups.map((group) =>
+            groups.map((group, gi) =>
                 group.items.length > 0 ? (
-                    <section class="mb-8">
+                    <section class="mb-8 note-group" data-cat={group.name}>
                         <h2 class="text-xl font-bold mb-3 text-primary">
                             {group.name}
                         </h2>
@@ -114,4 +129,36 @@ const hasAny = groups.some((g) => g.items.length > 0);
             )
         }
     </div>
+
+    <script is:inline>
+        (function () {
+            var btnWrap = document.getElementById("notes-cat-filters");
+            if (!btnWrap) return;
+            var groups = document.querySelectorAll(".note-group");
+            var btns = btnWrap.querySelectorAll("button");
+            function apply(sel) {
+                groups.forEach(function (g) {
+                    g.style.display = sel === "all" || g.getAttribute("data-cat") === sel
+                        ? "" : "none";
+                });
+                btns.forEach(function (b) {
+                    var active = b.getAttribute("data-cat") === sel;
+                    b.classList.toggle("btn-primary", active);
+                    b.classList.toggle("btn-outline", !active);
+                });
+                if (sel === "all") {
+                    var allBtn = btnWrap.querySelector('[data-cat="all"]');
+                    allBtn.classList.add("btn-primary");
+                    allBtn.classList.remove("btn-outline");
+                }
+            }
+            btns.forEach(function (b) {
+                b.addEventListener("click", function () {
+                    apply(b.getAttribute("data-cat"));
+                });
+            });
+            // 默认高亮“全部”
+            apply("all");
+        })();
+    </script>
 </BaseLayout>
