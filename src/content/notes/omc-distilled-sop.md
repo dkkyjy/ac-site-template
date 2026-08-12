@@ -1,6 +1,6 @@
 ---
 title: "OMC - 蒸馏笔记"
-category: "多智能体编排"
+category: "OMC / OMX 工作流"
 description: "oh-my-claudecode Teams-first 多 Agent 编排层蒸馏与决策表。"
 pubDate: "2026-08-10"
 badge: "distilled"

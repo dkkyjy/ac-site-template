@@ -1,6 +1,6 @@
 ---
 title: "OMX (oh-my-codex) - 使用示例"
-category: "OMX / Codex 工作流"
+category: "OMC / OMX 工作流"
 description: "OMX (oh-my-codex) 使用示例大全。"
 pubDate: "Aug 10 2026"
 badge: "guide"

@@ -1,6 +1,6 @@
 ---
 title: "OMX - 蒸馏笔记"
-category: "OMX / Codex 工作流"
+category: "OMC / OMX 工作流"
 description: "oh-my-codex 多 Agent 编排层蒸馏存档：结构、接入方式。"
 pubDate: "2026-08-10"
 badge: "distilled"

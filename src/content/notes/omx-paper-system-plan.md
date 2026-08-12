@@ -1,6 +1,6 @@
 ---
 title: "OMX - 学习笔记"
-category: "OMX / Codex 工作流"
+category: "OMC / OMX 工作流"
 description: "OMX 用法学习笔记。"
 pubDate: "Aug 10 2026"
 badge: "guide"
