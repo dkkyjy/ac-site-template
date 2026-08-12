@@ -1,7 +1,7 @@
 ---
 title: "OpenCodeReview - AI 代码审查"
 category: "代码审查"
-description: "基于 alibaba/open-code-review 的 Git Diff 代码审查能力。"
+description: "基于 alibaba/open-code-review 的 Git Diff 代码审查能力（含 SOP、CLI 安装/配置与示例）。"
 pubDate: "2026-08-10"
 badge: "guide"
 tags: ["review", "ai", "code"]
@@ -253,3 +253,80 @@ review:
 
 *本 SOP 基于 alibaba/open-code-review 蒸馏（2026-06-26）*
 *形态：混合型 Morphling（核心流程重写 + prompt设计调用 + CLI/session/telemetry 舍弃）*
+
+
+---
+
+## 附录：CLI 安装与配置速览（合并自使用指南）
+
+## 1. 安装
+
+**通过 NPM（推荐）**
+```bash
+npm install -g @alibaba-group/open-code-review
+```
+安装后获得全局命令 `ocr`。
+
+**从 GitHub Release 安装**
+```bash
+curl -fsSL https://raw.githubusercontent.com/alibaba/open-code-review/main/install.sh | sh
+```
+
+## 4. 配置 LLM
+
+配置文件路径：`~/.opencodereview/config.json`
+
+```json
+{
+  "llm": {
+    "url": "https://api.openai.com/v1/chat/completions",
+    "auth_token": "sk-xxxxxxx",
+    "model": "claude-opus-4-6",
+    "use_anthropic": true
+  },
+  "language": "English"
+}
+```
+
+也支持环境变量配置：
+```bash
+export OCR_LLM_URL=https://api.openai.com/v1/chat/completions
+export OCR_LLM_TOKEN=sk-xxxxxxx
+export OCR_LLM_MODEL=claude-opus-4-6
+export OCR_USE_ANTHROPIC=true
+```
+
+## 5. 自定义 Review Rules
+
+创建 `~/.opencodereview/rules.json`（支持多层级：`--rule` > 项目配置 > 全局配置）：
+
+```json
+{
+  "rules": [
+    {"path": "**/*.java", "rule": "Check for null safety"},
+    {"path": "**/*.js", "rule": "Check for XSS vulnerabilities"},
+    {"path": "**/*.py", "rule": "Check SQL injection patterns"}
+  ],
+  "include": ["src/main/**/*.java", "lib/**/*.kt"],
+  "exclude": ["**/generated/**", "vendor/**"]
+}
+```
+
+## 7. 支持的平台/Agent
+
+- **平台**: Windows / macOS / Linux
+- **Agent**: Claude Code / Codex / Cursor
+- **LLM 后端**: OpenAI / Anthropic / DashScope(通义) / DeepSeek / Z-AI
+
+## 架构亮点
+
+| 能力 | 说明 |
+|------|------|
+| **精准文件选择** | 确定哪些文件需要 review，哪些应过滤 |
+| **智能文件捆绑** | 将相关文件分组到同一个 review 单元（如多语言 properties） |
+| **细粒度规则匹配** | 按文件特性匹配 review 规则，模板引擎驱动更稳定 |
+| **外部定位&反思模块** | 独立的位置修正和内容反思模块 |
+| **Token 效率** | 相比通用 agent 仅消耗约 **1/9** 的 token |
+| **Benchmark** | 50个开源仓库、200个真实PR、10种编程语言验证 |
+
+更多详情请访问官方文档：[alibaba.github.io/open-code-review/](https://alibaba.github.io/open-code-review/)

@@ -1,7 +1,7 @@
 ---
 title: "OMX (oh-my-codex) - 使用示例"
 category: "OMC / OMX 工作流"
-description: "OMX (oh-my-codex) 使用示例大全。"
+description: "OMX (oh-my-codex) 使用示例大全（含文献系统应用案例）。"
 pubDate: "Aug 10 2026"
 badge: "guide"
 tags: ["omx", "codex"]
@@ -257,3 +257,93 @@ Skills → 可复用的工作流模板 ($deep-interview, $ralplan, ...)
 ---
 
 以上所有内容均来自 OMX 源码（v0.18.15）、README、以及 50+ 个 Skill SKILL.md 文件。完整的技能库可以在 `memory/OMX/` 中找到。
+
+
+---
+
+## 附录：文献系统应用案例（合并自 OMX 学习笔记）
+
+※ 技能速查部分见上文各章节。
+
+## 二、文献系统在OMX框架中的映射
+
+### 2.1 OMX Skill → 系统能力映射
+
+| OMX能力 | 系统中使用场景 |
+|---------|--------------|
+| `$team` | 并行抓取多数据源、并行分析多篇论文 |
+| `$ultragoal` | 管理"获取→筛选→下载→分析→报告"多步骤管线 |
+| `$autoresearch-goal` | 周期性深度研究（如"本周量子计算趋势"） |
+| `$ralplan` | 新增数据源/功能前的架构规划 |
+| `scheduled_task_sop` | 每日定时触发论文监控 |
+| `Goal Hive (BBS)` | 多Worker间消息协调、文件共享 |
+| `arxiv-daily-researcher` | 核心引擎（数据源/筛选/下载/翻译/报告/通知） |
+| `omx agents-init` | 初始化文献项目的AGENTS.md配置 |
+
+### 2.2 调度架构
+
+```
+scheduled_task_sop (定时触发)
+        │
+        ▼
+omx team N:executor "每日文献跟踪"
+        │
+    ┌───┼───────┬───────┬───────┐
+    │   │       │       │       │
+    ▼   ▼       ▼       ▼       ▼
+  Worker1 Worker2 Worker3 Worker4 Worker5
+  数据源   筛选    下载    分析    报告
+  抓取    评分    PDF    LLM分析  生成
+                              │
+                              ▼
+                       通知推送(多渠道)
+```
+
+---
+
+## 三、Phase1 实施步骤
+
+### Step 0: 环境准备
+```bash
+# 确认arxiv-daily-researcher可运行
+cd ~/storage/github/arxiv-daily-researcher
+source venv/bin/activate
+python main.py --help
+
+# 初始化OMX agents配置
+cd ~/storage/github/arxiv-daily-researcher
+omx agents-init .
+```
+
+### Step 1: 配置文献系统
+- 修改 `configs/config.json` 设置关键词（如 `quant-ph` 等）
+- 配置通知渠道
+- 测试单次运行
+
+### Step 2: 编写OMX AGENTS.md
+- 为系统根目录生成AGENTS.md，描述Worker职责分工
+- 定义每个Worker的scope
+
+### Step 3: 用omx team第一次并行跑
+```bash
+omx team 2:executor "运行arxiv-daily-researcher的daily_research模式"
+```
+
+### Step 4: 配置定时任务
+- 使用 `scheduled_task_sop` 设置每日自动运行
+
+---
+
+## 四、常见问题
+
+**Q: omx team和普通python subprocess的区别？**
+- omx team: 每个worker独立Codex CLI会话，tmux持久化，worktree隔离，自动任务协调
+- subprocess: 简单的子进程，无隔离/状态管理
+
+**Q: 什么时候用autoresearch-goal vs ultragoal？**
+- autoresearch-goal: 研究性质，需教授评判验收（"这篇文献综述做到位了吗"）
+- ultragoal: 执行性质，多步骤任务管理（"先抓取、再分析、最后通知"）
+
+**Q: 没有tmux环境怎么办？**
+- omx team依赖tmux → 先 `brew install tmux`
+- 或者用Codex native subagents（同一会话内）处理小型并行
