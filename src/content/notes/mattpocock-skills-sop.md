@@ -1,6 +1,6 @@
 ---
 title: "Matt Pocock Skills - 蒸馏总结"
-category: "技能库 / 框架"
+category: "Matt Pocock"
 description: "Matt Pocock 40+ AI Coding Agent 技能库蒸馏，核心价值与可组合路由。"
 pubDate: "2026-08-10"
 badge: "guide"
