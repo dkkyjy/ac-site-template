@@ -1,5 +1,6 @@
 ---
 title: "build_chain - 开发全链路方法论"
+category: "AI 开发方法论"
 description: "从想法到代码落地的完整开发链路编排（蒸馏自 mattpocock 主流程）。"
 pubDate: "2026-08-10"
 badge: "guide"

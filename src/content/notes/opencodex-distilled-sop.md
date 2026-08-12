@@ -1,5 +1,6 @@
 ---
 title: "OpenCodex - 蒸馏笔记"
+category: "多智能体编排"
 description: "Universal provider proxy 蒸馏：任意 LLM 网关路由方法论。"
 pubDate: "2026-08-10"
 badge: "distilled"

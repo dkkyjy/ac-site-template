@@ -1,5 +1,6 @@
 ---
 title: "ChatDev - 工作流介绍"
+category: "多智能体编排"
 description: "ChatDev 内置 43 个可用工作流 YAML 分类介绍。"
 pubDate: "Aug 10 2026"
 badge: "guide"

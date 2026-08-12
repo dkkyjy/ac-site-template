@@ -1,5 +1,6 @@
 ---
 title: "OpenSpec - 蒸馏笔记"
+category: "AI 开发方法论"
 description: "Spec-Driven Development(SDD) 轻量规格驱动开发框架：先对齐再构建。"
 pubDate: "2026-08-10"
 badge: "guide"

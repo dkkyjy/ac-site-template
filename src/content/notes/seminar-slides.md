@@ -1,5 +1,6 @@
 ---
 title: "OMC - 多智能体编排演示"
+category: "多智能体编排"
 description: "Oh-My-ClaudeCode (OMC) 多智能体编排演讲资料（中译版）。"
 pubDate: "Aug 10 2026"
 badge: "guide"

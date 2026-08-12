@@ -1,5 +1,6 @@
 ---
 title: "CRPropa3 - 软件功能总结"
+category: "专项工具 / 科研"
 description: "CRPropa3 功能总结与使用文档。"
 pubDate: "Aug 10 2026"
 badge: "guide"

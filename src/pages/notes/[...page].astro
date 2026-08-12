@@ -8,10 +8,25 @@ import { AUTHOR_INITIAL, url as baseUrl } from "../../config";
 export async function getStaticPaths({ paginate }) {
     const notes = await getCollection("notes");
     notes.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-    return paginate(notes, { pageSize: 10 });
+    return paginate(notes, { pageSize: 100 });
 }
 
 const { page } = Astro.props;
+
+// 按「学习项目」分组展示
+const CATEGORY_ORDER = [
+    "多智能体编排",
+    "AI 开发方法论",
+    "OMX / Codex 工作流",
+    "代码审查",
+    "技能库 / 框架",
+    "专项工具 / 科研",
+];
+const groups = CATEGORY_ORDER.map((cat) => ({
+    name: cat,
+    items: page.data.filter((n) => n.data.category === cat),
+}));
+const hasAny = groups.some((g) => g.items.length > 0);
 ---
 
 <BaseLayout title={AUTHOR_INITIAL + " | Notes"} sideBarActiveItemID="notes">
@@ -20,7 +35,7 @@ const { page } = Astro.props;
     </div>
 
     {
-        page.data.length === 0 ? (
+        !hasAny ? (
             <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
                 <p class="font-bold">Sorry!</p>
                 <p>
@@ -28,25 +43,34 @@ const { page } = Astro.props;
                 </p>
             </div>
         ) : (
-            <ul>
-                {page.data.map((note) => (
-                    <>
-                        <HorizontalCard
-                            title={note.data.title}
-                            img={note.data.heroImage}
-                            desc={note.data.description}
-                            url={
-                                baseUrl("notes/" +
-                                createSlug(note.data.title, note.slug))
-                            }
-                            target="_self"
-                            badge={note.data.badge}
-                            tags={note.data.tags}
-                        />
-                        <div class="divider my-0" />
-                    </>
-                ))}
-            </ul>
+            groups.map((group) =>
+                group.items.length > 0 ? (
+                    <section class="mb-8">
+                        <h2 class="text-xl font-bold mb-3 text-primary">
+                            {group.name}
+                        </h2>
+                        <ul>
+                            {group.items.map((note) => (
+                                <>
+                                    <HorizontalCard
+                                        title={note.data.title}
+                                        img={note.data.heroImage}
+                                        desc={note.data.description}
+                                        url={
+                                            baseUrl("notes/" +
+                                            createSlug(note.data.title, note.slug))
+                                        }
+                                        target="_self"
+                                        badge={note.data.badge}
+                                        tags={note.data.tags}
+                                    />
+                                    <div class="divider my-0" />
+                                </>
+                            ))}
+                        </ul>
+                    </section>
+                ) : null
+            )
         )
     }
 

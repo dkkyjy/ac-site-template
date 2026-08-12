@@ -17,6 +17,7 @@ const blogSchema = z.object({
 const notesSchema = z.object({
   title: z.string(),
   description: z.string(),
+  category: z.string().optional(),
   pubDate: z.coerce.date(),
   updatedDate: z.string().optional(),
   heroImage: z.string().optional(),

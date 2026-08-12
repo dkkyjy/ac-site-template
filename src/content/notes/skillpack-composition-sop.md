@@ -1,5 +1,6 @@
 ---
 title: "Skillpack - 四包编排"
+category: "专项工具 / 科研"
 description: "grill/openspec/superpowers/compound-engineering 四包有机编排。"
 pubDate: "2026-08-10"
 badge: "guide"

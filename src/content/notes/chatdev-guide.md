@@ -1,5 +1,6 @@
 ---
 title: "ChatDev 2.0 - 使用指南"
+category: "多智能体编排"
 description: "零代码多智能体编排平台 ChatDev 2.0 (DevAll) 的完整使用指南：平台定位、核心概念、前端/命令行用法、典型示例与自定义工作流。"
 pubDate: "Aug 10 2026"
 badge: "guide"

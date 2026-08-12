@@ -1,5 +1,6 @@
 ---
 title: "LLM Wiki - 用法示例"
+category: "技能库 / 框架"
 description: "LLM Wiki 用法示例展示。"
 pubDate: "Aug 10 2026"
 badge: "guide"

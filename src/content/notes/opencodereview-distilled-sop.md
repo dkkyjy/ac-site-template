@@ -1,5 +1,6 @@
 ---
 title: "OpenCodeReview - 蒸馏分析"
+category: "代码审查"
 description: "阿里 AI 代码审查 CLI 的蒸馏分析：目标/架构/测试。"
 pubDate: "2026-08-10"
 badge: "distilled"

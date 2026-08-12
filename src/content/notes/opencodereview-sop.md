@@ -1,5 +1,6 @@
 ---
 title: "OpenCodeReview - AI 代码审查"
+category: "代码审查"
 description: "基于 alibaba/open-code-review 的 Git Diff 代码审查能力。"
 pubDate: "2026-08-10"
 badge: "guide"

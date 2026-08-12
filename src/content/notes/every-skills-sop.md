@@ -1,5 +1,6 @@
 ---
 title: "every_skills - 外部技能库索引"
+category: "技能库 / 框架"
 description: "外部技能库(superpowers等)的插件/技能目录索引。"
 pubDate: "2026-08-10"
 badge: "reference"

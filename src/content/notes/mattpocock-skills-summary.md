@@ -1,5 +1,6 @@
 ---
 title: "Matt Pocock Skills - 完整用法指南"
+category: "技能库 / 框架"
 description: "Matt Pocock skills 的完整总结与用法指南。"
 pubDate: "Aug 10 2026"
 badge: "guide"

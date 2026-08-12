@@ -1,5 +1,6 @@
 ---
 title: "OpenCodeReview - 使用指南"
+category: "代码审查"
 description: "Open Code Review 使用示例汇总。"
 pubDate: "Aug 10 2026"
 badge: "guide"
