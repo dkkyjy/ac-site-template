@@ -9,7 +9,6 @@ tags: ["cr-pulse-interpolator", "物理"]
 
 # demo_signal_interpolation.py 逐行讲解: 全波形 3D 插值
 
-*2026-07-30T04:28:31Z by Showboat 0.6.1*
 本文档逐行讲解 `demo_signal_interpolation.py`。该脚本完整演示了 **cr-pulse-interpolator** 包的全波形 3D 插值：对一组模拟天线（星形足印）的时域电场信号，在任意测试位置重建完整脉冲，并系统评估插值精度。
 
 ## 1. 导入与数据概述

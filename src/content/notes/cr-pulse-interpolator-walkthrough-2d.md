@@ -9,7 +9,6 @@ tags: ["cr-pulse-interpolator", "物理"]
 
 # demo_interpolation_fourier.py 逐行讲解: 2D 标量插值
 
-*2026-07-30T04:25:04Z by Showboat 0.6.1*
 本文档逐行讲解 `demo_interpolation_fourier.py`。该脚本演示了 **cr-pulse-interpolator** 包最核心的底层模块 — `interp2d_fourier` 类，它实现了在星形极坐标网格上的 2D 傅里叶插值。
 
 ## 1. 导入与数据加载

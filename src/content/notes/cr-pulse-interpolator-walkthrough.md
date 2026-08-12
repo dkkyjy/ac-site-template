@@ -9,7 +9,6 @@ tags: ["cr-pulse-interpolator", "物理"]
 
 # minimal_usage_demo.py 逐行讲解
 
-*2026-07-30T04:21:41Z by Showboat 0.6.1*
 本文档逐行讲解 `minimal_usage_demo.py` 的完整工作流程。该脚本演示了如何使用 **cr-pulse-interpolator** 包对宇宙射线大气簇射（CoREAS 模拟）的射电信号进行傅里叶插值。
 
 ## 1. 导入模块
