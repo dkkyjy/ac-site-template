@@ -1,13 +1,13 @@
 ---
-title: "build_chain - 开发全链路方法论"
-category: "AI 开发方法论"
+title: "Matt Pocock Build Chain - 开发全链路方法论"
+category: "Matt Pocock"
 description: "从想法到代码落地的完整开发链路编排（蒸馏自 mattpocock 主流程）。"
 pubDate: "2026-08-10"
 badge: "guide"
 tags: ["build-chain", "workflow", "plan"]
 ---
 
-# build_chain_sop — 想法→交付 的全链路（Morphling 蒸馏自 mattpocock/skills 主流程）
+# Matt Pocock Build Chain — 想法→交付 的全链路（Morphling 蒸馏自 mattpocock/skills 主流程）
 
 > 来源（原版 docs+SKILL.md 实读): skills/engineering/{ask-matt,wayfinder,to-spec,to-tickets,implement,code-review,domain-modeling,triage,improve-codebase-architecture} + productivity/{grilling,grill-me,grill-with-docs,to-questionnaire}。
 > 关系: 这是把 grill 家族（已独立入 grilling_sop.md）接上"从想法到代码落地"的其余环节的**主链编成**。grilling_sop 已含单个询问题；本 SOP 讲各环节如何衔接与纪律。
