@@ -2,7 +2,7 @@
 title: "UltraRAG - 功能总结"
 category: "技能库 / 框架"
 description: "UltraRAG 功能总结与使用指南。"
-pubDate: "Aug 10 2026"
+pubDate: "2026-08-10"
 badge: "guide"
 tags: ["ultrarag", "rag"]
 ---

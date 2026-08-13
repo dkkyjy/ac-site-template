@@ -1,8 +1,8 @@
 ---
 title: "Matt Pocock Skills - 完整用法与蒸馏指南"
-category: "Matt Pocock"
+category: "AI 开发方法论"
 description: "Matt Pocock skills 的完整总结、用法与 GA 蒸馏/映射指南（22 技能详解、用法、GA 映射）。"
-pubDate: "Aug 10 2026"
+pubDate: "2026-08-10"
 badge: "guide"
 tags: ["mattpocock", "skills"]
 ---

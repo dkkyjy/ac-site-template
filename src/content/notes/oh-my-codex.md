@@ -2,7 +2,7 @@
 title: "OMX (oh-my-codex) - 使用示例"
 category: "OMC / OMX 工作流"
 description: "OMX (oh-my-codex) 使用示例大全（含文献系统应用案例）。"
-pubDate: "Aug 10 2026"
+pubDate: "2026-08-10"
 badge: "guide"
 tags: ["omx", "codex"]
 ---

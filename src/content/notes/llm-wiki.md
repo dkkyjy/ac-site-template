@@ -2,7 +2,7 @@
 title: "LLM Wiki - 用法示例"
 category: "技能库 / 框架"
 description: "LLM Wiki 用法示例展示。"
-pubDate: "Aug 10 2026"
+pubDate: "2026-08-10"
 badge: "guide"
 tags: ["llm", "wiki"]
 ---

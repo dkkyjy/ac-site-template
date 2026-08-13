@@ -2,7 +2,7 @@
 title: "OMC - 多智能体编排演示"
 category: "OMC / OMX 工作流"
 description: "Oh-My-ClaudeCode (OMC) 多智能体编排演讲资料（中译版）。"
-pubDate: "Aug 10 2026"
+pubDate: "2026-08-10"
 badge: "guide"
 tags: ["omc", "多智能体", "演示"]
 ---

@@ -2,7 +2,7 @@
 title: "Superpowers - 使用指南"
 category: "AI 开发方法论"
 description: "Superpowers 完整使用指南。"
-pubDate: "Aug 10 2026"
+pubDate: "2026-08-10"
 badge: "guide"
 tags: ["superpowers", "skill"]
 ---

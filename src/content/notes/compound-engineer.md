@@ -2,7 +2,7 @@
 title: "Compound Engineering - 使用示例"
 category: "AI 开发方法论"
 description: "Compound Engineering 使用示例大全。"
-pubDate: "Aug 10 2026"
+pubDate: "2026-08-10"
 badge: "guide"
 tags: ["compound", "工程"]
 ---
