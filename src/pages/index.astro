@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE_TITLE, url } from "../config";
+import { AUTHOR_NAME, url } from "../config";
 ---
 
 <BaseLayout sideBarActiveItemID="home">
     <div class="pb-12 mt-5">
         <img src={url('favicon.svg')} alt="" class="w-24 h-24 mb-2" />
         <div class="text-xl py-1">Hey there</div>
-        <div class="text-5xl font-bold">I'm {SITE_TITLE}</div>
+        <div class="text-5xl font-bold">I'm {AUTHOR_NAME}</div>
         <div class="text-xl py-6">
             Welcome to my personal website. <br />
             Feel free to look around and learn more about me!

@@ -11,10 +11,12 @@ export async function getStaticPaths({ paginate }) {
     return post.data.tags || [];
   });
 
-  return all_tags.flatMap((tag) => {
-    const filtred_posts = all_posts.filter((post) => {
-      return post.data.tags?.includes(tag);
-    });
+  return [...new Set(all_tags)].flatMap((tag) => {
+    const filtred_posts = all_posts
+      .filter((post) => {
+        return post.data.tags?.includes(tag);
+      })
+      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
     return paginate(filtred_posts, {
       params: { tag },
       pageSize: 10,
