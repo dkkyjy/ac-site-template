@@ -31,4 +31,4 @@ jobs:
       - name: Build check
         run: pnpm build
         env:
-          BASE_URL: /astro-site/
+          BASE_URL: /ac-site-template/
