@@ -1,6 +1,6 @@
 ---
 title: "PenguinHarness (Prism-Shadow) - RSI 引擎研究报告"
-category: "AI 开发方法论"
+category: "技能库 / 框架"
 description: "PenguinHarness 深度研究报告：hiyouga（LlamaFactory 作者）的 RSI 多智能体平台，OmniMessage 协议、ReAct 循环、自我进化闭环（Builder→Benchmark→Evaluator→Optimizer→Snapshot），以及本地安装实测记录。"
 pubDate: "2026-09-10"
 badge: "reference"
