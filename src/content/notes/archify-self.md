@@ -1,6 +1,6 @@
 ---
 title: "Archify：AI 架构图 Agent Skill（自画像交互图）"
-category: "AI 开发方法论"
+category: "技能库 / 框架"
 description: "tt-a1i/archify 上手实测：一个让 AI Agent 直接产出可交互架构图/流程图/时序图的 Skill，包含安装、authoring 流程，以及用它画出的 Archify 自身架构交互图（中文版，可直接在页面中操作）。"
 pubDate: "2026-09-10"
 badge: "guide"

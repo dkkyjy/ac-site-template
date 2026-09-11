@@ -1,6 +1,6 @@
 ---
 title: "Superpowers - 使用指南"
-category: "AI 开发方法论"
+category: "技能库 / 框架"
 description: "Superpowers 完整使用指南。"
 pubDate: "2026-08-10"
 badge: "guide"

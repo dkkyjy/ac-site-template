@@ -1,6 +1,6 @@
 ---
 title: "Agent Skills (addyosmani) - 完整使用指南"
-category: "AI 开发方法论"
+category: "技能库 / 框架"
 description: "addyosmani/agent-skills 的完整总结：25 个生产级工程技能、9 个斜杠命令、4 个人格、安装方式与设计理念。"
 pubDate: "2026-09-08"
 badge: "guide"
