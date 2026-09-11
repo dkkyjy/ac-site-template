@@ -1,6 +1,6 @@
 ---
 title: "AI Research Skills — 98 个 AI 研究工程技能库"
-category: "技能库 / 框架"
+category: "技能库"
 description: "Orchestra-Research/AI-Research-SKILLs 完整总结：98 个 AI 研究 skill（23 个分类），以 autoresearch 双循环编排层为核心，覆盖从文献调研、训练微调、推理服务到论文写作的 AI 研究全生命周期；含 9 个 agent 全自动产出论文的 demo。"
 pubDate: "2026-09-11"
 badge: "guide"

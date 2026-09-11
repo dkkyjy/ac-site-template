@@ -1,6 +1,6 @@
 ---
 title: "Understand-Anything - 使用示例"
-category: "技能库 / 框架"
+category: "框架 / 工具"
 description: "Understand-Anything 使用示例。"
 pubDate: "2026-08-10"
 badge: "guide"

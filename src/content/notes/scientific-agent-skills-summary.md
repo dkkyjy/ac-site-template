@@ -1,6 +1,6 @@
 ---
 title: "Scientific Agent Skills - 163 个科学技能包"
-category: "技能库 / 框架"
+category: "技能库"
 description: "K-Dense-AI/scientific-agent-skills 完整总结：163 个科学 Agent Skills（19 个分类、100+ 科学数据库），把任意 AI agent 变成 AI Scientist，兼容 Claude Code / Cursor / Codex 等，含论文 arXiv:2609.00065。"
 pubDate: "2026-09-10"
 badge: "guide"

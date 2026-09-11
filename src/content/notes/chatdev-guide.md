@@ -1,6 +1,6 @@
 ---
 title: "ChatDev 2.0 - 使用指南"
-category: "技能库 / 框架"
+category: "框架 / 工具"
 description: "零代码多智能体编排平台 ChatDev 2.0 (DevAll) 的完整使用指南：平台定位、核心概念、前端/命令行用法、典型示例、完整 43 个工作流明细与自定义工作流。"
 pubDate: "2026-08-10"
 badge: "guide"

@@ -1,6 +1,6 @@
 ---
 title: "技能库总索引（2026-09-08）"
-category: "技能库 / 框架"
+category: "技能库"
 description: "本机全部技能库导航：10 个 Claude 插件 + 目录 skill（openspec/speckit/wiki 系）+ 统一架构说明。"
 pubDate: "2026-09-08"
 badge: "reference"

@@ -1,6 +1,6 @@
 ---
 title: "UltraRAG - 功能总结"
-category: "技能库 / 框架"
+category: "框架 / 工具"
 description: "UltraRAG 功能总结与使用指南。"
 pubDate: "2026-08-10"
 badge: "guide"

@@ -1,6 +1,6 @@
 ---
 title: "Hermes Agent - 文档总结"
-category: "技能库 / 框架"
+category: "框架 / 工具"
 description: "Nous Research 的 Hermes Agent 文档全景总结:自进化 AI 代理的定位与两条设计铁律、六种运行入口、66 个顶层 CLI 子命令、技能/toolsets/插件三大扩展面、profile 路由与多网关、安全运维与仓库内工程文档索引。"
 pubDate: "2026-09-11"
 badge: "guide"

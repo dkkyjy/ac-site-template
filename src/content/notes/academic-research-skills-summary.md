@@ -1,6 +1,6 @@
 ---
 title: "Academic Research Skills - 学术论文全流程技能包"
-category: "技能库 / 框架"
+category: "技能库"
 description: "Imbad0202/academic-research-skills 完整总结：deep-research（13-agent 研究）、academic-paper（12-agent 写作）、academic-paper-reviewer（5 席位评审）、academic-pipeline（10 阶段编排）四大技能，从研究到发表的全流程。"
 pubDate: "2026-09-10"
 badge: "guide"

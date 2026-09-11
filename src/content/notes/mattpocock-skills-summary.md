@@ -1,6 +1,6 @@
 ---
 title: "Matt Pocock Skills - 完整用法与蒸馏指南"
-category: "技能库 / 框架"
+category: "技能库"
 description: "Matt Pocock skills 的完整总结、用法与 GA 蒸馏/映射指南（22 技能详解、用法、Build Chain 主链编排、GA 映射）。"
 pubDate: "2026-08-10"
 badge: "guide"
