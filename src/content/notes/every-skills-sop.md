@@ -26,7 +26,7 @@ tags: ["skills", "index", "reference"]
 | compound-engineering@compound-engineering-plugin | 2.39.0 | 37 skills + `/lfg` `/slfg` 命令（全自动化流水线） | [compound-engineer](/notes/compound-engineer) |
 | compound-knowledge | 0.2.0 | 6 skills（kw-* 知识工作流） | — |
 | superpowers@claude-plugins-official | 6.3.0 | 15+ skills（brainstorming / TDD / systematic-debugging 等） | [superpower](/notes/superpower) |
-| code-review@claude-plugins-official | — | 代码审查 | [opencodereview-sop](/notes/opencodereview-sop) |
+| code-review@claude-plugins-official | — | 代码审查 | — |
 | code-simplifier@claude-plugins-official | 1.0.0 | 代码简化 | — |
 | commit-commands@claude-plugins-official | — | Git 提交命令 | — |
 | claude-md-management@claude-plugins-official | 1.0.0 | 文档管理 | — |
