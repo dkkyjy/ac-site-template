@@ -6,7 +6,7 @@ import createSlug from "../../../../lib/createSlug";
 import { url as baseUrl } from "../../../../config";
 
 export async function getStaticPaths({ paginate }) {
-  const all_posts = await getCollection("blog");
+  const all_posts = (await getCollection("blog")) ?? [];
   const all_tags = all_posts.flatMap((post) => {
     return post.data.tags || [];
   });

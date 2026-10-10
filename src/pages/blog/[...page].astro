@@ -6,15 +6,36 @@ import createSlug from "../../lib/createSlug";
 import { AUTHOR_INITIAL, url as baseUrl } from "../../config";
 
 export async function getStaticPaths({ paginate }) {
-    const posts = await getCollection("blog");
+    // getCollection 在集合目录无条目时返回 undefined（不是 []）——统一兜底，避免 500
+    const posts = (await getCollection("blog")) ?? [];
     posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+    // 空集合时 paginate 不产出任何页面（/blog/ 会 404），显式生成一页以渲染「暂无文章」空态
+    if (posts.length === 0) {
+        return [
+            {
+                params: { page: undefined },
+                props: {
+                    page: {
+                        data: [],
+                        start: 0,
+                        end: 0,
+                        total: 0,
+                        size: 10,
+                        currentPage: 1,
+                        lastPage: 1,
+                        url: { current: undefined, prev: undefined, next: undefined },
+                    },
+                },
+            },
+        ];
+    }
     return paginate(posts, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
 
 // Collect all unique tags with counts
-const allPosts = await getCollection("blog");
+const allPosts = (await getCollection("blog")) ?? [];
 const tagCounts = {};
 for (const post of allPosts) {
     const tags = post.data.tags || [];
