@@ -2,7 +2,7 @@
 title: "Personal Research Assistant"
 description: "本地运行的 AI 天体物理研究助手（高能伽玛天文、多信使、暗物质、统计推断）— arxiv 监控、Zotero 知识库、RAG QA、Docker 沙箱内 LLM 生成分析代码，带 Web UI。"
 pubDate: "Jul 03 2026"
-updatedDate: "Jul 13 2026"
+updatedDate: "Oct 22 2026"
 heroImage: "/itemPreview.png"
 badge: "active"
 github: "https://github.com/dkkyjy/research-assistant"
